@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "type": "module",
   "main": "server.js",
-  "engines": { "node": ">=18 <=22" },
+  "engines": { "node": ">=20.10.0" },
   "scripts": {
+    "postinstall": "puppeteer browsers install chrome",
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "lru-cache": "^11.0.0",
+    "express": "^4.21.1",
+    "lru-cache": "^11.0.1",
     "puppeteer": "^24.16.0"
   }
 }
