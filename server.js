@@ -84,7 +84,7 @@ async function validateResolvablePublic(host) {
       ip.startsWith("169.254.") ||
       ip.startsWith("fe80:");
 
-    if (isPrivate) throw new Error("private address blocked");
+    if (isPrivate) throw new Error("private ip blocked");
   }
 }
 
