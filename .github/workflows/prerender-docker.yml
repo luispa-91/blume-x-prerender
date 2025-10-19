@@ -2,7 +2,7 @@ name: Build & Deploy Prerender (Docker Hub → Azure)
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 env:
